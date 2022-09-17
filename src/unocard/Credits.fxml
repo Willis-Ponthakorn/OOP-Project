@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg3" stylesheets="@background3.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unocard.CreditsController">
+   <children>
+      <Button fx:id="MainMenu" layoutX="497.0" layoutY="345.0" mnemonicParsing="false" onAction="#HandleBacktomain2" text="MainMenu" />
+      <Text layoutX="204.0" layoutY="74.0" stroke="#ffe500" strokeType="OUTSIDE" strokeWidth="1.5" text="CREDITS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Group layoutX="60.0" layoutY="208.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="  นาย ธนภูมิ                     ชัยพรรณา                                        63010422" wrappingWidth="479.1640625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  นาย นพสิทธิ์                   จันทรวีระกุล                                      63010487" wrappingWidth="479.1640625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  นาย พชร                       หลาวเพ็ชร์                                        63010629" wrappingWidth="479.1640625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  นาย พนธกร                   สุจิตชวานนท์                                     63010633" wrappingWidth="479.1640625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Text fill="#fff600" layoutX="83.0" layoutY="136.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="กลุ่ม KK sec 18">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="206.0" fitWidth="137.0" layoutX="444.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" rotate="63.4">
+         <image>
+            <Image url="@image/icon4.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

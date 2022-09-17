@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unocard.HTP1Controller">
+   <children>
+      <Button fx:id="Back2" layoutX="47.0" layoutY="344.0" mnemonicParsing="false" onAction="#Handleback2" text="BACK" />
+      <Button fx:id="MainMenu" layoutX="498.0" layoutY="344.0" mnemonicParsing="false" onAction="#HandleBackTomain" text="MainMenu" />
+      <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="47.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/newyp.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="117.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+2 -Next player draw 2 card and skip turn.(Could be stack)" wrappingWidth="118.3515625" />
+      <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="47.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/newbr.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="117.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reverse" />
+      <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="47.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/newrs.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="117.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skip - Skip next player immediately.(Couldn't be stack)" wrappingWidth="118.3515625" />
+      <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="300.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/newwc.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="376.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wild - Player can change to any color.(Could be place on any card type)" wrappingWidth="159.0" />
+      <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="300.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/newplus4.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="376.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wild draw 4 - Player can change to any color and next player must draw 4 and skip turn.(Couldn't be stack)" wrappingWidth="159.0" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If no ne of card on player hand is playable,Draw a card and if there still no card could be play = skip turn. " wrappingWidth="206.44921875" />
+   </children>
+</AnchorPane>

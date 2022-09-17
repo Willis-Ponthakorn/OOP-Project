@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unocard.HTPController">
+   <children>
+      <Button fx:id="Back" layoutX="35.0" layoutY="352.0" mnemonicParsing="false" onAction="#HandleBackToMain" text="BACK" />
+      <Group layoutX="65.0" layoutY="57.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newr2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newy2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newb2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newg2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <AnchorPane layoutX="111.0" layoutY="28.0" />
+      <Text fill="WHITE" layoutX="254.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER CARD - 0-9 number card 4 color each. You have to match either by the number, color, or the symbol. For instance, if the Discard Pile has a red cardthat is an 8 you have to place either a red card or a card with an 8 on it.You can also play a Wild card (which can alter current color in play)." wrappingWidth="263.13671875" />
+      <Group layoutX="36.0" layoutY="212.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newr7.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newr2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="23.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unocard/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newrr.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newrs.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newrp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="239.0" layoutY="213.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newy8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newb8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="23.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unocard/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="36.0" layoutX="115.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unocard/checky.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="405.0" layoutY="213.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newwc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newg7.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="23.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unocard/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="36.0" layoutX="128.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unocard/checky.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/newplus4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Text fill="WHITE" layoutX="31.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="same color/symbol = playable" />
+      <Text fill="WHITE" layoutX="228.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="same number = playable" textAlignment="CENTER" />
+      <Text fill="WHITE" layoutX="411.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wild card = playable" />
+      <Group layoutX="36.0" layoutY="282.0" />
+      <ImageView fitHeight="54.0" fitWidth="36.0" layoutX="185.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unocard/checky.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="next" layoutX="518.0" layoutY="352.0" mnemonicParsing="false" onAction="#handlnextPage" text="NEXT" />
+   </children>
+</AnchorPane>

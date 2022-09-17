@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unocard.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#252424" height="768.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle fx:id="tableColor" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff" height="205.0" layoutX="296.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+      <Button fx:id="unoButton" layoutX="610.0" layoutY="359.0" mnemonicParsing="false" onAction="#sayUno" text="Say UNO!">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Button fx:id="draw" layoutX="341.0" layoutY="359.0" mnemonicParsing="false" onAction="#drawPressed" text="Draw">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="cardTable" fitHeight="150.0" fitWidth="100.0" layoutX="461.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../uno/newb0.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="186.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You">
+         <font>
+            <Font name="Franklin Gothic Demi" size="42.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bot3Value" disable="true" layoutX="136.0" layoutY="143.0" prefHeight="38.0" prefWidth="114.0" text="xxx Cards">
+         <font>
+            <Font name="Franklin Gothic Demi" size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="58.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bot3">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="58.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bot2Value" disable="true" layoutX="496.0" layoutY="49.0" prefHeight="38.0" prefWidth="114.0" text="xxx Cards">
+         <font>
+            <Font name="Franklin Gothic Demi" size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="418.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bot2">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="418.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bot1Value" disable="true" layoutX="854.0" layoutY="143.0" prefHeight="38.0" prefWidth="114.0" text="xxx Cards">
+         <font>
+            <Font name="Franklin Gothic Demi" size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="776.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bot1">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="776.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have">
+         <font>
+            <Font name="Franklin Gothic Demi" size="32.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="playerGrid" layoutX="186.0" layoutY="394.0" prefHeight="320.0" prefWidth="650.0" vgap="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="97.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="bot3Grid" layoutX="56.0" layoutY="183.0" prefHeight="54.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="bot2Grid" layoutX="412.0" layoutY="89.0" prefHeight="54.0" prefWidth="200.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="bot1Grid" layoutX="771.0" layoutY="183.0" prefHeight="54.0" prefWidth="200.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="onTableCard" fitHeight="150.0" fitWidth="100.0" layoutX="462.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="red" layoutX="118.0" layoutY="474.0" mnemonicParsing="false" onAction="#redPressed" text="Red">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="yellow" layoutX="111.0" layoutY="508.0" mnemonicParsing="false" onAction="#yellowPressed" text="Yellow">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="blue" layoutX="116.0" layoutY="578.0" mnemonicParsing="false" onAction="#bluePressed" text="Blue">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="green" layoutX="112.0" layoutY="543.0" mnemonicParsing="false" onAction="#greenPressed" text="Green">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="left" layoutX="426.0" layoutY="359.0" mnemonicParsing="false" onAction="#goLeft" text="&lt;-">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="play" layoutX="477.0" layoutY="359.0" mnemonicParsing="false" onAction="#playPressed" text="Play">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="right" layoutX="540.0" layoutY="359.0" mnemonicParsing="false" onAction="#goRight" text="-&gt;">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="win" fill="WHITE" layoutX="686.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="393.13671875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="55.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="scrollText" layoutX="824.0" layoutY="294.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="loop" disable="true" layoutX="31.0" layoutY="304.0" prefHeight="38.0" prefWidth="249.0" text="Loop : CounterClockWise">
+         <font>
+            <Font name="Franklin Gothic Demi" size="20.0" />
+         </font>
+      </TextField>
+      
+   </children>
+</AnchorPane>
